@@ -1,12 +1,12 @@
 import { Card, Box, Typography } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import RegionMap from '../components/RegionMap';
 
-const testStyles = {}
-
-console.log(<RegionMap/>)
 
 const Home = () => {
+   
+
+
     return (
         <div>
             <Typography variant="h3" component={'h1'} gutterBottom>
@@ -16,12 +16,10 @@ const Home = () => {
                 <Card sx={{ height: '50vh', width: '50vh', backgroundColor: 'darkgrey' }} />
                 <Box container='true'>
                     <Card sx={{ width: '50vh', backgroundColor: 'darkgrey' }}>
-                        <RegionMap testStyles={testStyles}/>
+                        <RegionMap />
                     </Card>
                 </Box>
             </Box>
-                
-                    
         </div>
     );
 };
